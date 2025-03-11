@@ -252,4 +252,13 @@ elif vehical=="four_wheel":
     price=time*3000
     st.write("The cost of the vehical is:",price)
 
+
+Mode=st.radio("Select the mode of payment:",['UPI','QR'])
+if Mode=="UPI":
+    UPI=st.text_input("Enter the UPI ID")
+
+elif Mode=="QR":
+    image = Image.open("scan.jpg")
+    st.image(image,width=300)
+    
     
